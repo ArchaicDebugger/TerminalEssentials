@@ -1,0 +1,1 @@
+wt.exe -p "PROFILE"; split-pane -p "PROFILE TOP RIGHT" ; split-pane -p "Docker"; move-focus left ; move-focus up ; split-pane -p "PROFILE BOTTOM LEFT"
