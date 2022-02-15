@@ -40,24 +40,24 @@
         [
             {
                 "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
+                "commandline": "pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
                 "font": 
                 {
                     "face": "CaskaydiaCove NF",
                     "size": 10
                 },
                 "guid": "{6cf5b240-514d-4083-8779-9c71eb503855}",
-                "icon": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\assets\\Powershell_black.ico",
+                "icon": "Powershell_black.ico",
                 "name": "PowerShell",
                 "startingDirectory": "C:\\repos"
             },
             {
                 "background": "#FF9810",
-                "backgroundImage": "C:\\Users\\User\\Downloads\\icons\\Final.png",
+                "backgroundImage": "Final.png",
                 "backgroundImageOpacity": 0.59999999999999998,
                 "backgroundImageStretchMode": "uniformToFill",
                 "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
+                "commandline": "pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
                 "font": 
                 {
                     "face": "CaskaydiaCove NF",
@@ -65,7 +65,7 @@
                 },
                 "foreground": "#FFFFFF",
                 "guid": "{6cf5b240-514d-4083-8779-9c71eb503856}",
-                "icon": "C:\\Users\\User\\Downloads\\gifs\\code.png",
+                "icon": "gifs\\code.png",
                 "name": "Repos",
                 "opacity": 40,
                 "startingDirectory": "C:\\repos",
@@ -73,11 +73,11 @@
             },
             {
                 "background": "#000000",
-                "backgroundImage": "C:\\Users\\User\\Downloads\\icons\\Final.png",
+                "backgroundImage": "Final.png",
                 "backgroundImageOpacity": 0.29999999999999999,
                 "backgroundImageStretchMode": "uniformToFill",
                 "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
+                "commandline": "pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
                 "font": 
                 {
                     "face": "CaskaydiaCove NF",
@@ -86,18 +86,18 @@
                 "foreground": "#FFFFFF",
                 "guid": "{6cf5b240-514d-4083-8779-9c71eb503857}",
                 "icon": "C:\\Users\\User\\Downloads\\gifs\\code.png",
-                "name": "3FS",
+                "name": "WEB",
                 "opacity": 30,
                 "startingDirectory": "C:\\repos\\3FS",
                 "useAcrylic": true
             },
             {
                 "background": "#FF9810",
-                "backgroundImage": "C:\\Users\\User\\Downloads\\icons\\Final.png",
+                "backgroundImage": "Final.png",
                 "backgroundImageOpacity": 0.59999999999999998,
                 "backgroundImageStretchMode": "uniformToFill",
                 "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
+                "commandline": "pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
                 "font": 
                 {
                     "face": "CaskaydiaCove NF",
@@ -105,92 +105,10 @@
                 },
                 "foreground": "#FFFFFF",
                 "guid": "{6cf5b240-514d-4083-8779-9c71eb703857}",
-                "icon": "C:\\Users\\User\\Downloads\\gifs\\code.png",
+                "icon": "code.png",
                 "name": "QuikConfig",
                 "opacity": 40,
-                "startingDirectory": "C:\\repos\\QuikConfig",
-                "useAcrylic": true
-            },
-            {
-                "background": "#000000",
-                "backgroundImage": "C:\\Users\\User\\Downloads\\icons\\Final.png",
-                "backgroundImageOpacity": 0.29999999999999999,
-                "backgroundImageStretchMode": "uniformToFill",
-                "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
-                "font": 
-                {
-                    "face": "CaskaydiaCove NF",
-                    "size": 8
-                },
-                "foreground": "#FFFFFF",
-                "guid": "{6cf5b240-524d-4083-8779-9c71eb703857}",
-                "icon": "C:\\Users\\User\\Downloads\\gifs\\code.png",
-                "name": "NEMS",
-                "opacity": 30,
-                "startingDirectory": "C:\\repos\\NordEngineering_NEMS_Preventivatore",
-                "useAcrylic": true
-            },
-            {
-                "background": "#000000",
-                "backgroundImage": "C:\\Users\\User\\Downloads\\icons\\Final.png",
-                "backgroundImageOpacity": 0.59999999999999998,
-                "backgroundImageStretchMode": "uniformToFill",
-                "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
-                "font": 
-                {
-                    "face": "CaskaydiaCove NF",
-                    "size": 8
-                },
-                "foreground": "#000000",
-                "guid": "{6cf5b240-524d-4083-8779-9c221b703857}",
-                "icon": "C:\\Users\\User\\Downloads\\gifs\\code.png",
-                "name": "NemsPDF",
-                "opacity": 30,
-                "startingDirectory": "C:\\repos\\GofPDFDriver",
-                "useAcrylic": true
-            },
-            {
-                "background": "#EBD214",
-                "backgroundImage": "C:\\Users\\User\\Downloads\\gifs\\building2.gif",
-                "backgroundImageAlignment": "bottomRight",
-                "backgroundImageOpacity": 0.40000000000000002,
-                "backgroundImageStretchMode": "none",
-                "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''; npm run developwatch\"",
-                "font": 
-                {
-                    "face": "CaskaydiaCove NF",
-                    "size": 5
-                },
-                "foreground": "#000000",
-                "guid": "{6cf5b240-514d-4083-8779-9c71eb503858}",
-                "icon": "C:\\Users\\User\\Downloads\\gifs\\code.png",
-                "name": "3FS Web",
-                "opacity": 40,
-                "startingDirectory": "C:\\repos\\3FS\\EFS.Web",
-                "useAcrylic": true
-            },
-            {
-                "background": "#EBD214",
-                "backgroundImage": "C:\\Users\\User\\Downloads\\gifs\\building2.gif",
-                "backgroundImageAlignment": "bottomRight",
-                "backgroundImageOpacity": 0.40000000000000002,
-                "backgroundImageStretchMode": "none",
-                "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
-                "font": 
-                {
-                    "face": "CaskaydiaCove NF",
-                    "size": 5
-                },
-                "foreground": "#000000",
-                "guid": "{6cf5b240-514d-4000-8779-9c71eb503858}",
-                "icon": "C:\\Users\\User\\Downloads\\gifs\\code.png",
-                "name": "3FS Web Backend",
-                "opacity": 40,
-                "startingDirectory": "C:\\repos\\3FS\\EFS.Web",
+                "startingDirectory": "repos\\QuikConfig",
                 "useAcrylic": true
             },
             {
@@ -212,47 +130,6 @@
                 "name": "QuikConfig Expo",
                 "opacity": 40,
                 "startingDirectory": "C:\\repos\\QuikConfig",
-                "useAcrylic": true
-            },
-            {
-                "background": "#FF9810",
-                "backgroundImage": "C:\\Users\\User\\Downloads\\gifs\\code2.gif",
-                "backgroundImageAlignment": "bottomRight",
-                "backgroundImageOpacity": 0.40000000000000002,
-                "backgroundImageStretchMode": "none",
-                "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
-                "font": 
-                {
-                    "face": "CaskaydiaCove NF",
-                    "size": 8
-                },
-                "foreground": "#ffffff",
-                "guid": "{6cf5b240-534d-4083-8779-9c71eb703857}",
-                "icon": "C:\\Users\\User\\Downloads\\gifs\\code.png",
-                "name": "NEMS Web",
-                "opacity": 30,
-                "startingDirectory": "C:\\repos\\NordEngineering_NEMS_Preventivatore\\NEMS.Web",
-                "useAcrylic": true
-            },
-            {
-                "background": "#000000",
-                "backgroundImage": "C:\\Users\\User\\Downloads\\icons\\Final.png",
-                "backgroundImageOpacity": 0.29999999999999999,
-                "backgroundImageStretchMode": "uniformToFill",
-                "colorScheme": "Dracula",
-                "commandline": "C:\\Users\\User\\scoop\\apps\\pwsh\\current\\pwsh.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command \"Invoke-Expression 'Import-Module ''%USERPROFILE%\\Documents\\PowerShell\\wt_profile.ps1'''\"",
-                "font": 
-                {
-                    "face": "CaskaydiaCove NF",
-                    "size": 8
-                },
-                "foreground": "#FFFFFF",
-                "guid": "{6cf5b240-514d-4083-8289-9c71eb503857}",
-                "icon": "C:\\Users\\User\\Downloads\\gifs\\code.png",
-                "name": "TaskWarp",
-                "opacity": 30,
-                "startingDirectory": "C:\\repos\\TaskWarp",
                 "useAcrylic": true
             },
             {
