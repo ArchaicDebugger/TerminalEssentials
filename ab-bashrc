@@ -29,21 +29,21 @@ ab_test_mode() {
 
 ab_docker_start() {
     mkdir ~/.tmp-appbuilder-docker
-    curl "https://raw.githubusercontent.com/ArchaicDebugger/ab_essentials/master/docker/docker-compose.yml" --output ~/.tmp-appbuilder-docker/docker-compose.yml
+    curl "https://raw.githubusercontent.com/ArchaicDebugger/TerminalEssentials/main/ab-docker-compose.yml" --output ~/.tmp-appbuilder-docker/docker-compose.yml
 	docker compose -f ~/.tmp-appbuilder-docker/docker-compose.yml up -d
     rm -rf ~/.tmp-appbuilder-docker
 }
 
 ab_docker_stop() {
 	mkdir ~/.tmp-appbuilder-docker
-    curl "https://raw.githubusercontent.com/ArchaicDebugger/ab_essentials/master/docker/docker-compose.yml" --output ~/.tmp-appbuilder-docker/docker-compose.yml
+    curl "https://raw.githubusercontent.com/ArchaicDebugger/TerminalEssentials/main/ab-docker-compose.yml" --output ~/.tmp-appbuilder-docker/docker-compose.yml
 		docker compose -f ~/.tmp-appbuilder-docker/docker-compose.yml stop
     rm -rf ~/.tmp-appbuilder-docker
 }
 
 ab_docker_down() {
 	mkdir ~/.tmp-appbuilder-docker
-    curl "https://raw.githubusercontent.com/ArchaicDebugger/ab_essentials/master/docker/docker-compose.yml" --output ~/.tmp-appbuilder-docker/docker-compose.yml
+    curl "https://raw.githubusercontent.com/ArchaicDebugger/TerminalEssentials/main/ab-docker-compose.yml" --output ~/.tmp-appbuilder-docker/docker-compose.yml
 		docker compose -f ~/.tmp-appbuilder-docker/docker-compose.yml down
     rm -rf ~/.tmp-appbuilder-docker
 }
