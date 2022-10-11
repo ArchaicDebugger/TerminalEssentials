@@ -1,0 +1,37 @@
+version: '3.7'
+
+services:
+  ab_postgres:
+    image: postgres:${PG_VERSION:-14}
+    container_name: ${PREPEND_CONTAINER_NAME:-ab}_postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-appbu1ld3r}
+      POSTGRES_USER: ${DB_USER:-appbuilder}
+      POSTGRES_DB: db
+    ports:
+      - ${PG_PORT:-5432}:5432
+
+  ab_redis:
+    image: redis:latest
+    container_name: ${PREPEND_CONTAINER_NAME:-ab}_redis
+    restart: always
+    ports:
+      - ${REDIS_PORT:-6379}:6379
+
+  ab_tokumx:
+    image: ankurcha/tokumx:latest
+    container_name: ${PREPEND_CONTAINER_NAME:-ab}_tokumx
+    restart: always
+    ports:
+      - ${MONGO_PORT:-27017}:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USER:-appbuilder}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD:-appbu1ld3r}
+
+  ab_memcached:
+    image: memcached:latest
+    container_name: ${PREPEND_CONTAINER_NAME:-ab}_memcached
+    restart: always
+    ports:
+      - ${MEMCACHED_PORT:-11211}:11211

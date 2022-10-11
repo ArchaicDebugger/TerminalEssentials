@@ -1,0 +1,57 @@
+#appbuilder essentials
+alias ab_yarn_hot="HOT=true RAILS_ENV=development NODE_ENV=development yarn start"
+
+alias ab_rails_dev="REACT_ON_RAILS_ENV=HOT rails server"
+
+alias ab_rails_test="RAILS_ENV=test rails server"
+
+alias ab_env_test_vars="REACT_ON_RAILS_ENV= RAILS_ENV=test NODE_ENV=test HOT=false EXECJS_RUNTIME=Node"
+
+alias ab_env_switch_db_test="RAILS_ENV=test bundle exec rake db:drop db:create db:system_config:create 'data:import_all[db/demo/postgres_seed.tar.gz]' db:test:prepare"
+
+alias ab_env_switch_db_dev="RAILS_ENV=development bundle exec rake db:drop db:create db:system_config:create 'data:import_all[db/demo/postgres_seed.tar.gz]' db:test:prepare"
+
+alias ab_env_test_precompile="RAILS_ENV=test EXECJS_RUNTIME='Node' bundle exec rake assets:precompile"
+
+alias ab_sidekiq_test="RAILS_ENV=test bundle exec sidekiq"
+
+alias ab_sidekiq_dev="RAILS_ENV=development bundle exec sidekiq"
+
+alias ab_cypress="yarn cypress open"
+
+alias ab_mongo="rake data:turn_off_atoms_in_pg"
+
+ab_test_mode() {
+	ab_env_test_vars
+	ab_env_switch_db_test
+	ab_env_test_precompile
+}
+
+ab_docker_start() {
+    mkdir ~/.tmp-appbuilder-docker
+    curl "https://raw.githubusercontent.com/ArchaicDebugger/ab_essentials/master/docker/docker-compose.yml" --output ~/.tmp-appbuilder-docker/docker-compose.yml
+	docker compose -f ~/.tmp-appbuilder-docker/docker-compose.yml up -d
+    rm -rf ~/.tmp-appbuilder-docker
+}
+
+ab_docker_stop() {
+	mkdir ~/.tmp-appbuilder-docker
+    curl "https://raw.githubusercontent.com/ArchaicDebugger/ab_essentials/master/docker/docker-compose.yml" --output ~/.tmp-appbuilder-docker/docker-compose.yml
+		docker compose -f ~/.tmp-appbuilder-docker/docker-compose.yml stop
+    rm -rf ~/.tmp-appbuilder-docker
+}
+
+ab_docker_down() {
+	mkdir ~/.tmp-appbuilder-docker
+    curl "https://raw.githubusercontent.com/ArchaicDebugger/ab_essentials/master/docker/docker-compose.yml" --output ~/.tmp-appbuilder-docker/docker-compose.yml
+		docker compose -f ~/.tmp-appbuilder-docker/docker-compose.yml down
+    rm -rf ~/.tmp-appbuilder-docker
+}
+
+ab_postgres() {
+	rake data:turn_off_atoms_in_pg
+	rake data:move_atoms_to_pg
+	rake data:catchup_atoms_to_pg
+	rake data:verify_atp_counts
+	rake data:turn_on_atoms_in_pg
+}
