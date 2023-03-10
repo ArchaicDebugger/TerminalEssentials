@@ -9,6 +9,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD:-appbu1ld3r}
       POSTGRES_USER: ${DB_USER:-appbuilder}
       POSTGRES_DB: db
+    command: postgres -c max_connections=100000
     ports:
       - ${PG_PORT:-5432}:5432
 
