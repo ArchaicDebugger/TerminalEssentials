@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD:-appbu1ld3r}
       POSTGRES_USER: ${DB_USER:-appbuilder}
       POSTGRES_DB: db
-    command: postgres -c max_connections=100000
+    command: postgres -c shared_buffers=256MB -c max_connections=100000
     ports:
       - ${PG_PORT:-5432}:5432
 
@@ -20,15 +20,15 @@ services:
     ports:
       - ${REDIS_PORT:-6379}:6379
 
-  ab_tokumx:
-    image: ankurcha/tokumx:latest
-    container_name: ${PREPEND_CONTAINER_NAME:-ab}_tokumx
-    restart: always
-    ports:
-      - ${MONGO_PORT:-27017}:27017
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${DB_USER:-appbuilder}
-      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD:-appbu1ld3r}
+  # ab_tokumx:
+  #   image: ankurcha/tokumx:latest
+  #   container_name: ${PREPEND_CONTAINER_NAME:-ab}_tokumx
+  #   restart: always
+  #   ports:
+  #     - ${MONGO_PORT:-27017}:27017
+  #   environment:
+  #     MONGO_INITDB_ROOT_USERNAME: ${DB_USER:-appbuilder}
+  #     MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD:-appbu1ld3r}
 
   ab_memcached:
     image: memcached:latest
